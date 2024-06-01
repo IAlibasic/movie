@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+    <mat-label>Search movies</mat-label>
+    <input matInput (input)="searchMovies($event)">
+</mat-form-field>
+
+<mat-spinner *ngIf="isLoading$ | async"></mat-spinner>
